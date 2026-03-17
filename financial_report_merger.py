@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import io
+import warnings
+
+warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
 
 st.set_page_config(page_title="出帳合併系統", layout="wide")
 
