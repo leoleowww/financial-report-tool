@@ -51,7 +51,7 @@ if uploaded_files:
         matches = filter_data(combined_df, "請購日期", start_date, end_date)
 
         st.success(f"已找到範圍內 {len(matches)} 筆資料")
-        st.dataframe(matches.head(50))
+        st.dataframe(matches.head(len(matches)))
 
         # --- DOWNLOAD ---
         buffer = io.BytesIO()
